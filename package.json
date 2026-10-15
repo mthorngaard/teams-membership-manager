@@ -1,0 +1,1 @@
+{"name":"teams-membership-manager","version":"1.0.0","private":true,"scripts":{"prestart":"pwsh -NoLogo -NoProfile -File ./ensure-graph.ps1","start":"node server.js","test":"node --test"},"engines":{"node":">=22"}}
