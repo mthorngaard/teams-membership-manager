@@ -14,19 +14,21 @@ Local web app that adds an existing user to a maintainable list of teams and cha
 
 ## Quick start
 
-1. Install Node.js 22 or newer and PowerShell 7.
-2. Double-click `Start.cmd`.
-3. Open http://localhost:3000 and choose **Sign in with Graph**.
-4. Sign in with a work account that can manage the relevant memberships.
-5. Get teams and channels, or import your own list. The list starts empty.
-6. Enter the user's sign-in address, select the entries, and confirm.
+1. Copy or clone the project to a local folder on the computer, and start it from that folder. The app stores its list and runs PowerShell in the project folder.
+2. Install Node.js 22 or newer and PowerShell 7.
+3. Double-click `Start.cmd`.
+4. Open http://localhost:3000 and choose **Sign in with Graph**.
+5. Sign in with a work account that can manage the relevant memberships.
+6. Get teams and channels, or import your own list. The list starts empty.
+7. Enter the user's sign-in address, select the entries, and confirm.
 
 ## Setup
 
-1. Install PowerShell 7 if `pwsh` is not already available.
-2. Double-click `Start.cmd`, or run `powershell -NoProfile -ExecutionPolicy Bypass -File .\Start.ps1` from the project folder. The start script finds Node.js and PowerShell 7 even when they are not on your PATH. It can use the Node.js runtime that comes with Codex. npm is not required. The app checks the Graph module automatically and installs it from the PowerShell Gallery for the current user if it is missing. The first installation needs internet access, but not administrator rights. An already installed module is reused without an automatic update. If installation or loading fails, an error is shown and startup stops. `npm start` can still be used if npm is installed.
-3. Open http://localhost:3000 in the browser.
-4. Click **Sign in with Graph**. The app shows a one-time code and a link to Microsoft sign-in. Open the link, enter the code, and sign in with a work account that can manage the relevant memberships. The app continues automatically when sign-in is complete.
+1. Copy or clone the project to a local folder on the computer, and start it from that folder. The app stores its list and runs PowerShell in the project folder.
+2. Install PowerShell 7 if `pwsh` is not already available.
+3. Double-click `Start.cmd`, or run `powershell -NoProfile -ExecutionPolicy Bypass -File .\Start.ps1` from the project folder. The start script finds Node.js and PowerShell 7 even when they are not on your PATH. It can use the Node.js runtime that comes with Codex. npm is not required. The app checks the Graph module automatically and installs it from the PowerShell Gallery for the current user if it is missing. The first installation needs internet access, but not administrator rights. An already installed module is reused without an automatic update. If installation or loading fails, an error is shown and startup stops. `npm start` can still be used if npm is installed.
+4. Open http://localhost:3000 in the browser.
+5. Click **Sign in with Graph**. The app shows a one-time code and a link to Microsoft sign-in. Open the link, enter the code, and sign in with a work account that can manage the relevant memberships. The app continues automatically when sign-in is complete.
 
 The check lives in `ensure-graph.ps1` and also runs in the Graph process if the server is started directly with `node server.js`. The start script's dependencies can be checked without starting the server with `powershell -NoProfile -ExecutionPolicy Bypass -File .\Start.ps1 -CheckOnly`.
 

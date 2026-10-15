@@ -1,11 +1,12 @@
 TEAMS AND CHANNEL ADMINISTRATION
 
-1. Install Node.js 22 or newer and PowerShell 7.
-2. Double-click Start.cmd.
-3. Open http://localhost:3000 and choose Sign in with Graph.
-4. Sign in with your organization's work account.
-5. Get teams and channels, and build your own access list.
-6. Enter the user's sign-in address, select access, and confirm the addition.
+1. Copy the project to a local folder on the computer, and start it from that folder.
+2. Install Node.js 22 or newer and PowerShell 7.
+3. Double-click Start.cmd.
+4. Open http://localhost:3000 and choose Sign in with Graph.
+5. Sign in with your organization's work account.
+6. Get teams and channels, and build your own access list.
+7. Enter the user's sign-in address, select access, and confirm the addition.
 
 The list starts empty. No organization data is included.
 The Graph module is installed automatically when needed for the current user.
